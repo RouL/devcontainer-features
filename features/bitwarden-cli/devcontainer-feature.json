@@ -1,0 +1,48 @@
+{
+  "id": "bitwarden-cli",
+  "version": "1.0.0",
+  "name": "Bitwarden CLI (bw)",
+  "description": "Installs the bitwarden CLI (bw) and optionally configures it to use a self-hosted server.",
+  "options": {
+    "server": {
+      "description": "Provides the URL of your Bitwarden server, if you host your own server.",
+      "type": "string",
+      "default": ""
+    },
+    "web_vault": {
+      "description": "Provides a custom web vault URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "api": {
+      "description": "Provides a custom API URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "identity": {
+      "description": "Provides a custom identity URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "icons": {
+      "description": "Provides a custom icons service URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "notifications": {
+      "description": "Provides a custom notifications URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "events": {
+      "description": "Provides a custom events URL that differs from the base URL.",
+      "type": "string",
+      "default": ""
+    },
+    "key_connector": {
+      "description": "Provides the URL for your Key Connector server.",
+      "type": "string",
+      "default": ""
+    }
+  }
+}

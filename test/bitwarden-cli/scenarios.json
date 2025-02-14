@@ -1,0 +1,25 @@
+{
+  "server_example": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "bitwarden-cli": {
+        "server": "https://example.com"
+      }
+    }
+  },
+  "server_example_full": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "bitwarden-cli": {
+        "server": "https://example.com",
+        "api": "https://example.com/api",
+        "web_vault": "https://example.com/web_vault",
+        "identity": "https://example.com/identity",
+        "icons": "https://example.com/icons",
+        "notifications": "https://example.com/notifications",
+        "events": "https://example.com/events",
+        "key_connector": "https://example.com/key_connector"
+      }
+    }
+  }
+}

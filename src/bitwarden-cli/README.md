@@ -7,7 +7,7 @@ Installs the bitwarden CLI (bw) and optionally configures it to use a self-hoste
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer/features/bitwarden-cli:1": {}
+    "ghcr.io/RouL/devcontainer-features/bitwarden-cli:1": {}
 }
 ```
 
@@ -28,4 +28,4 @@ Installs the bitwarden CLI (bw) and optionally configures it to use a self-hoste
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/RouL/devcontainer-features/blob/main/src/bitwarden-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -10,7 +10,7 @@ NOTIFICATIONS="${NOTIFICATIONS}"
 EVENTS="${EVENTS}"
 KEY_CONNECTOR="${KEY_CONNECTOR}"
 
-REQUIRED_PACKAGES="curl unzip sudo"
+REQUIRED_PACKAGES="curl unzip sudo ca-certificates"
 BW_URL="https://vault.bitwarden.com/download/?app=cli&platform=linux"
 TARGET_PATH=/usr/local/bin/bw
 

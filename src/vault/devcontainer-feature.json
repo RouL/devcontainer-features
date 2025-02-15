@@ -1,6 +1,6 @@
 {
   "id": "vault",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "HashiCorp Vault",
   "description": "Installs the HashiCorp Vault binary.",
   "options": {

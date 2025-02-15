@@ -1,0 +1,13 @@
+{
+  "id": "vault",
+  "version": "1.0.0",
+  "name": "HashiCorp Vault",
+  "description": "Installs the HashiCorp Vault binary.",
+  "options": {
+    "version": {
+      "description": "Provides the version to be installed. Defaults to newest available version.",
+      "type": "string",
+      "default": ""
+    }
+  }
+}

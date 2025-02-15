@@ -15,6 +15,7 @@ jobs:
       matrix:
         features:
           - bitwarden-cli
+          - bitwarden-secrets-manager
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -35,6 +36,7 @@ jobs:
       matrix:
         features:
           - bitwarden-cli
+          - bitwarden-secrets-manager
     steps:
       - uses: actions/checkout@v4
 

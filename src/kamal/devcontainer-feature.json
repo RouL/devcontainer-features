@@ -1,0 +1,17 @@
+{
+  "id": "kamal",
+  "version": "1.0.0",
+  "name": "Kamal Deploy",
+  "description": "Installs Kamal Deploy directly via rubygems.",
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/ruby",
+    "ghcr.io/devcontainers-extra/features/ruby-asdf"
+  ],
+  "options": {
+    "version": {
+      "description": "Provides the version to be installed. Defaults to newest available version.",
+      "type": "string",
+      "default": ""
+    }
+  }
+}

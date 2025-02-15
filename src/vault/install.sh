@@ -5,7 +5,7 @@ SERVER_BASE="${SERVER_BASE}"
 SERVER_API="${SERVER_API}"
 SERVER_IDENTITY="${SERVER_IDENTITY}"
 
-REQUIRED_PACKAGES="curl unzip sudo ca-certificates jq gpg"
+REQUIRED_PACKAGES="curl unzip sudo ca-certificates jq gpg gpg-agent"
 TARGET_PATH=/usr/local/bin/vault
 
 # check: https://developer.hashicorp.com/well-architected-framework/operational-excellence/verify-hashicorp-binary#verify-pgp-key-id-and-fingerprint

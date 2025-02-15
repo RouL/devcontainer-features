@@ -9,9 +9,9 @@ REQUIRED_PACKAGES="curl unzip sudo ca-certificates jq"
 TARGET_PATH=/usr/local/bin/bws
 
 error() {
-  echo "$1" >&2
-  echo "Exiting..." >&2
-  exit 1
+    echo "$1" >&2
+    echo "Exiting..." >&2
+    exit 1
 }
 
 apt_get_update()
@@ -30,25 +30,25 @@ check_packages() {
 }
 
 platform_detect() {
-  if [ "$(uname -s)" = "Linux" ]; then
-    PLATFORM="unknown-linux-gnu"
-  elif [ "$(uname -s)" = "Darwin" ]; then
-    PLATFORM="apple-darwin"
-  else
-    error "Unsupported platform: $(uname -s)"
-  fi
+    if [ "$(uname -s)" = "Linux" ]; then
+        PLATFORM="unknown-linux-gnu"
+    elif [ "$(uname -s)" = "Darwin" ]; then
+        PLATFORM="apple-darwin"
+    else
+        error "Unsupported platform: $(uname -s)"
+    fi
 }
 
 arch_detect() {
-  if [ "$(uname -m)" = "x86_64" ]; then
-    ARCH="x86_64"
-  elif [ "$(uname -m)" = "aarch64" ]; then # Linux
-    ARCH="aarch64"
-  elif [ "$(uname -m)" = "arm64" ]; then # Darwin/macOS
-    ARCH="aarch64"
-  else
-    error "Unsupported architecture: $(uname -m)"
-  fi
+    if [ "$(uname -m)" = "x86_64" ]; then
+        ARCH="x86_64"
+    elif [ "$(uname -m)" = "aarch64" ]; then # Linux
+        ARCH="aarch64"
+    elif [ "$(uname -m)" = "arm64" ]; then # Darwin/macOS
+        ARCH="aarch64"
+    else
+        error "Unsupported architecture: $(uname -m)"
+    fi
 }
 
 export DEBIAN_FRONTEND=noninteractive

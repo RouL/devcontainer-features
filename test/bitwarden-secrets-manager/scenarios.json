@@ -1,0 +1,20 @@
+{
+  "server_example": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "bitwarden-secrets-manager": {
+        "server_base": "https://example.com"
+      }
+    }
+  },
+  "server_example_full": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "bitwarden-secrets-manager": {
+        "server_base": "https://example.com",
+        "server_api": "https://example.com/api",
+        "server_identity": "https://example.com/identity"
+      }
+    }
+  }
+}

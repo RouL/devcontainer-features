@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+BASE_PATH=$( cd -- "$( dirname -- "${SCRIPT_PATH}" )" &> /dev/null && pwd )
+
+REPO_OWNER="${REPO_OWNER:-RouL}"
+REPO_NAME="${REPO_NAME:-devcontainer-features}"
+SRC_FOLDER="${SRC_FOLDER:-src}"
+
+cd $BASE_PATH
+
+devcontainer features generate-docs --project-folder $SRC_FOLDER --namespace $REPO_OWNER/$REPO_NAME --github-owner $REPO_OWNER --github-repo $REPO_NAME

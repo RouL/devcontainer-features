@@ -1,0 +1,18 @@
+{
+  "id": "mise",
+  "version": "1.0.0",
+  "name": "mise-en-place version manager",
+  "description": "Installs mise-en-place version manager.",
+  "options": {
+    "no_ruby_dependencies": {
+      "description": "If set to true, the dependencies for building ruby won't be installed.",
+      "type": "boolean",
+      "default": false
+    },
+    "no_python_dependencies": {
+      "description": "If set to true, the dependencies for building python won't be installed.",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

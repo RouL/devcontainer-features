@@ -1,13 +1,13 @@
 
-# mise-en-place version manager (mise)
+# Node.js (mise) (mise-python)
 
-Installs mise-en-place version manager.
+Installs Node.js via mise-en-place version manager.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/mise:1": {}
+    "ghcr.io/RouL/devcontainer-features/mise-python:1": {}
 }
 ```
 

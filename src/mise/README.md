@@ -11,12 +11,7 @@ Installs mise-en-place version manager.
 }
 ```
 
-## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| no_ruby_dependencies | If set to true, the dependencies for building ruby won't be installed. | boolean | false |
-| no_python_dependencies | If set to true, the dependencies for building python won't be installed. | boolean | false |
 
 
 

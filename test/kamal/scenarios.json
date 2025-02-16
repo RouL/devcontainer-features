@@ -14,5 +14,14 @@
         "version": "1.9.2"
       }
     }
+  },
+  "mise-ruby_latest-kamal1.9.2": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "ghcr.io/RouL/devcontainer-features/mise-ruby": {},
+      "kamal": {
+        "version": "1.9.2"
+      }
+    }
   }
 }

@@ -14,6 +14,8 @@ error() {
 check_ruby_env() {
     if command -v ruby > /dev/null; then
         export RUBY_ENV="ruby"
+    elif command -v mise > /dev/null; then
+        export RUBY_ENV="mise"
     elif command -v rbenv > /dev/null; then
         export RUBY_ENV="rbenv"
     else
@@ -27,6 +29,9 @@ gem_install() {
     case $RUBY_ENV in
         ruby)
             su $USERNAME -c "gem install $PARAMS"
+            ;;
+        mise)
+            su $USERNAME -c "mise exec -- gem install $PARAMS"
             ;;
         rbenv)
             su $USERNAME -c "rbenv exec gem install $PARAMS"

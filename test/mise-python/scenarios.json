@@ -1,0 +1,19 @@
+{
+  "python3.12": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-python": {
+        "version": "3.12"
+      }
+    }
+  },
+  "python3.13_python3.12_python3.11": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-python": {
+        "version": "3.13",
+        "extra_versions": "3.12 3.11"
+      }
+    }
+  }
+}

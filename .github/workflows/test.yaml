@@ -21,6 +21,7 @@ jobs:
           - mise-golang
           - mise-node
           - mise-python
+          - mise-ruby
           - mise-rust
           - vault
         baseImage:
@@ -71,6 +72,7 @@ jobs:
           - mise-golang
           - mise-node
           - mise-python
+          - mise-ruby
           - mise-rust
           - vault
     steps:

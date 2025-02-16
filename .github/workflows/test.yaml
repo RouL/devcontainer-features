@@ -20,6 +20,7 @@ jobs:
           - mise-golang
           - mise-node
           - mise-python
+          - mise-rust
           - vault
         baseImage:
           - debian:latest
@@ -68,6 +69,7 @@ jobs:
           - mise-golang
           - mise-node
           - mise-python
+          - mise-rust
           - vault
     steps:
       - uses: actions/checkout@v4

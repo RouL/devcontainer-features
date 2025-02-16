@@ -17,6 +17,7 @@ jobs:
           - bitwarden-cli
           - bitwarden-secrets-manager
           - mise
+          - mise-golang
           - mise-node
           - mise-python
           - vault
@@ -64,6 +65,7 @@ jobs:
           - bitwarden-secrets-manager
           - kamal
           - mise
+          - mise-golang
           - mise-node
           - mise-python
           - vault

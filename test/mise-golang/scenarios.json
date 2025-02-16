@@ -1,0 +1,19 @@
+{
+  "golang1.23": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-golang": {
+        "version": "1.23"
+      }
+    }
+  },
+  "golang1.24_golang1.23_golang1.22": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-golang": {
+        "version": "1.24",
+        "extra_versions": "1.23 1.22"
+      }
+    }
+  }
+}

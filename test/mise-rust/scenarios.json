@@ -1,0 +1,19 @@
+{
+  "rust1.80": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-rust": {
+        "version": "1.80"
+      }
+    }
+  },
+  "rust1.84_rust1.80_rust1.70": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-rust": {
+        "version": "1.84",
+        "extra_versions": "1.80 1.70"
+      }
+    }
+  }
+}

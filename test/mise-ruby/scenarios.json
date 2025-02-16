@@ -1,0 +1,19 @@
+{
+  "ruby3.3": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-ruby": {
+        "version": "3.3"
+      }
+    }
+  },
+  "ruby3.4_ruby3.3_ruby3.2": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-ruby": {
+        "version": "3.4",
+        "extra_versions": "3.3 3.2"
+      }
+    }
+  }
+}

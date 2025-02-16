@@ -9,6 +9,6 @@ CURRENT_VERSION="${CURRENT_VERSION#bun-v}"
 
 source dev-container-features-test-lib
 
-check "check default bun == latest ($CURRENT_VERSION)" bash -c "bun --version | grep -E '^${CURRENT_VERSION//\./\\.}$'"
+check "check default bun == latest ($CURRENT_VERSION)" bash -c "bun --version | grep -E '^${CURRENT_VERSION//\./\\.}\$'"
 
 reportResults

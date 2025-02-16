@@ -16,6 +16,7 @@ jobs:
         features:
           - bitwarden-cli
           - bitwarden-secrets-manager
+          - mise
           - vault
         baseImage:
           - debian:latest
@@ -59,8 +60,9 @@ jobs:
         features:
           - bitwarden-cli
           - bitwarden-secrets-manager
-          - vault
           - kamal
+          - mise
+          - vault
     steps:
       - uses: actions/checkout@v4
 

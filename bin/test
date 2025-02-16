@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+BASE_PATH=$( cd -- "$( dirname -- "${SCRIPT_PATH}" )" &> /dev/null && pwd )
+
+BASE_IMAGE_DEFAULT="mcr.microsoft.com/devcontainers/base:ubuntu"
+BASE_IMAGES='{
+    "kamal": "mcr.microsoft.com/devcontainers/ruby:latest"
+}'
+
+error() {
+    echo "ERROR: $@"
+    echo "USAGE: $0 <feature>"
+    exit 1
+}
+
+if [ $# -eq 0 ]; then
+    error "missing feature name"
+elif [ $# -gt 1 ]; then
+    error "you can only test one feature at a time"
+elif [[ $1 == +([0-9]) ]]; then
+    error "a number can't be a features name"
+fi
+
+FEATURE="$1"
+BASE_IMAGE="${BASE_IMAGE:-$(echo $BASE_IMAGES | jq --raw-output ".$FEATURE // empty")}"
+BASE_IMAGE="${BASE_IMAGE:-$BASE_IMAGE_DEFAULT}"
+
+cd $BASE_PATH
+
+echo $BASE_IMAGE
+
+devcontainer features test --skip-duplicated --features $FEATURE --base-image $BASE_IMAGE --project-folder $BASE_PATH

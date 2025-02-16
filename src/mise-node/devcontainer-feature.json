@@ -1,6 +1,6 @@
 {
   "id": "mise-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Node.js (mise)",
   "description": "Installs Node.js via mise-en-place version manager.",
   "dependsOn": {

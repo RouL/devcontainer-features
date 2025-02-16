@@ -36,7 +36,7 @@ install
 for extraVersion in $EXTRA_VERSIONS
 do
     echo "(*) Installung Node (${extraVersion}) via mise"
-    su ${USERNAME} -c "mise install node@${VERSION}"
+    su ${USERNAME} -c "mise install node@${extraVersion}"
 done
 
 # Clean up

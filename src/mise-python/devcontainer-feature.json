@@ -1,6 +1,6 @@
 {
   "id": "mise-python",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "Node.js (mise)",
   "description": "Installs Node.js via mise-en-place version manager.",
   "dependsOn": {

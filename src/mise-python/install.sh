@@ -36,7 +36,7 @@ install
 for extraVersion in $EXTRA_VERSIONS
 do
     echo "(*) Installung Python (${extraVersion}) via mise"
-    su ${USERNAME} -c "mise install python@${VERSION}"
+    su ${USERNAME} -c "mise install python@${extraVersion}"
 done
 
 # Clean up

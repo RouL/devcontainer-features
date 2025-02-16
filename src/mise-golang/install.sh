@@ -36,7 +36,7 @@ install
 for extraVersion in $EXTRA_VERSIONS
 do
     echo "(*) Installung Go (${extraVersion}) via mise"
-    su ${USERNAME} -c "mise install go@${VERSION}"
+    su ${USERNAME} -c "mise install go@${extraVersion}"
 done
 
 # Clean up

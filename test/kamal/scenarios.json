@@ -1,33 +1,9 @@
 {
-  "mcr-ruby3.3-kamal2.5.0": {
-    "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
-    "features": {
-      "kamal": {
-        "version": "2.5.0"
-      }
-    }
-  },
-  "mcr-ruby3.3-kamal2.4.0": {
-    "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
-    "features": {
-      "kamal": {
-        "version": "2.4.0"
-      }
-    }
-  },
-  "mcr-ruby3.3-kamal1.9.2": {
-    "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
+  "mcr-ruby_latest-kamal1.9.2": {
+    "image": "mcr.microsoft.com/devcontainers/ruby:latest",
     "features": {
       "kamal": {
         "version": "1.9.2"
-      }
-    }
-  },
-  "rails-ruby3.4.2-kamal2.5.0": {
-    "image": "ghcr.io/rails/devcontainer/images/ruby:3.4.2",
-    "features": {
-      "kamal": {
-        "version": "2.5.0"
       }
     }
   },
@@ -36,14 +12,6 @@
     "features": {
       "kamal": {
         "version": "1.9.2"
-      }
-    }
-  },
-  "rails-ruby3.3.7-kamal2.5.0": {
-    "image": "ghcr.io/rails/devcontainer/images/ruby:3.3.7",
-    "features": {
-      "kamal": {
-        "version": "2.5.0"
       }
     }
   }

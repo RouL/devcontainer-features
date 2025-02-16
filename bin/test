@@ -27,7 +27,7 @@ elif [[ $1 == +([0-9]) ]]; then
 fi
 
 FEATURE="$1"
-BASE_IMAGE="${BASE_IMAGE:-$(echo $BASE_IMAGES | jq --raw-output ".$FEATURE // empty")}"
+BASE_IMAGE="${BASE_IMAGE:-$(echo $BASE_IMAGES | jq --raw-output ".\"$FEATURE\" // empty")}"
 BASE_IMAGE="${BASE_IMAGE:-$BASE_IMAGE_DEFAULT}"
 
 cd $BASE_PATH

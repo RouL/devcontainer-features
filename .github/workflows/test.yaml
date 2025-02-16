@@ -17,6 +17,7 @@ jobs:
           - bitwarden-cli
           - bitwarden-secrets-manager
           - mise
+          - mise-python
           - vault
         baseImage:
           - debian:latest
@@ -62,6 +63,7 @@ jobs:
           - bitwarden-secrets-manager
           - kamal
           - mise
+          - mise-python
           - vault
     steps:
       - uses: actions/checkout@v4

@@ -1,0 +1,19 @@
+{
+  "node20": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-node": {
+        "version": "20"
+      }
+    }
+  },
+  "node23_node22_node20": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-node": {
+        "version": "23",
+        "extra_versions": "22 20"
+      }
+    }
+  }
+}

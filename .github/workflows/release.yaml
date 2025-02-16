@@ -33,6 +33,7 @@ jobs:
         run: |
           set -e
           echo "Start."
+          SKIP_GENERATE_FEATURE_DOCS="true" bin/generate_readme
           # Configure git and Push updates
           git config --global user.email github-actions[bot]@users.noreply.github.com
           git config --global user.name github-actions[bot]
@@ -41,6 +42,7 @@ jobs:
           git checkout -b $branch
           message='Automated documentation update'
           # Add / update and commit
+          git add README.md
           git add */**/README.md
           git commit -m 'Automated documentation update [skip ci]' || export NO_UPDATES=true
           # Push

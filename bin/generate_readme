@@ -8,6 +8,7 @@ SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 BASE_PATH=$( cd -- "$( dirname -- "${SCRIPT_PATH}" )" &> /dev/null && pwd )
 SOURCE_PATH="$BASE_PATH/src"
 TEMPLATE_PATH="$BASE_PATH/.templates"
+SKIP_GENERATE_FEATURE_DOCS="${SKIP_GENERATE_FEATURE_DOCS:-false}"
 
 cd $BASE_PATH
 
@@ -18,7 +19,7 @@ join_array() {
 }
 
 # re-generate docs for all features (just to be sure)
-$SCRIPT_PATH/generate_docs
+[ "$SKIP_GENERATE_FEATURE_DOCS" != "true" ] && $SCRIPT_PATH/generate_docs
 
 featureList=
 firstLine="true"

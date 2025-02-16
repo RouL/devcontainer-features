@@ -4,12 +4,12 @@ This repository is a collection of dev container Features managed by [Markus Zha
 This repository will **only accept improvements and
 bug fixes** for the [current set of maintained Features].
 
-If you're looking to create a new Feature, then we encourage adding it to a
+If you're looking to create a new Feature, then I'd encourage adding it to a
 separate repository of your control. The [devcontainers/feature-starter]
 repository has more guidance on self authoring Features.
 
 Once you've self authored the Features and if you'd like to share them with
-the community, then I'd recommend [adding it to the index].
+the community, I'd recommend [adding it to the index].
 
 If you've identified an issue and you want to fix it, here's how you can get
 started:

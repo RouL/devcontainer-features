@@ -1,0 +1,22 @@
+# Dev Container Features
+
+## Contents
+
+This repository contains the following features:
+
+$featureList
+
+## Usage
+
+To use the features from this repository, add the desired features to devcontainer.json.
+
+This example uses the **kamal** feature:
+
+```json
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/RouL/devcontainer-features/kamal:1": {}
+    }
+}
+```

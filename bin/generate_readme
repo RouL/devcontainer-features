@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+BASE_PATH=$( cd -- "$( dirname -- "${SCRIPT_PATH}" )" &> /dev/null && pwd )
+SOURCE_PATH="$BASE_PATH/src"
+TEMPLATE_PATH="$BASE_PATH/.templates"
+
+cd $BASE_PATH
+
+join_array() {
+    local IFS="$1"
+    shift
+    echo "$*"
+}
+
+# re-generate docs for all features (just to be sure)
+$SCRIPT_PATH/generate_docs
+
+featureList=
+firstLine="true"
+for featureFolder in `ls -1 $SOURCE_PATH | sort`
+do
+    if [ "$firstLine" == "true" ]; then
+        firstLine="false"
+    else
+        featureList+="\n"
+    fi
+
+    read featureName featureDescription < <(echo $(cat $SOURCE_PATH/$featureFolder/devcontainer-feature.json | jq --raw-output '.name, .description'))
+    featureList+="- [$featureName](./src/$featureFolder/README.md): $featureDescription"
+done
+
+export featureList=$(echo -e $featureList)
+cat "$TEMPLATE_PATH/README.md.in" | envsubst > $BASE_PATH/README.md

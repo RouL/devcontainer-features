@@ -1,0 +1,19 @@
+{
+  "bun1.1": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-bun": {
+        "version": "1.1"
+      }
+    }
+  },
+  "bun1.2_bun1.1_bun1.0": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-bun": {
+        "version": "1.2",
+        "extra_versions": "1.1 1.0"
+      }
+    }
+  }
+}

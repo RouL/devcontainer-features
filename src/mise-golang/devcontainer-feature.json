@@ -1,6 +1,6 @@
 {
   "id": "mise-golang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Go (mise)",
   "description": "Installs Go via mise-en-place version manager.",
   "dependsOn": {

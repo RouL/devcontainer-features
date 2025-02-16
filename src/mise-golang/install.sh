@@ -2,7 +2,7 @@
 set -e
 
 USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
-VERSION="${VERSION:-lts}"
+VERSION="${VERSION:-latest}"
 
 REQUIRED_PACKAGES="git ca-certificates"
 

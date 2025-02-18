@@ -1,7 +1,7 @@
 
-# Node.js (mise) (mise-python)
+# Python (mise) (mise-python)
 
-Installs Node.js via mise-en-place version manager.
+Installs Python via mise-en-place version manager.
 
 ## Example Usage
 

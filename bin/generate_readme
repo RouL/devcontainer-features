@@ -31,7 +31,9 @@ do
         featureList+="\n"
     fi
 
-    read featureName featureDescription < <(echo $(cat $SOURCE_PATH/$featureFolder/devcontainer-feature.json | jq --raw-output '.name, .description'))
+    featureData="$(cat $SOURCE_PATH/$featureFolder/devcontainer-feature.json | jq --raw-output '.name, .description')"
+    featureData="${featureData//$'\n'/$'\e'}" # it's unlikely \e is used in text ;)
+    IFS=$'\e' read featureName featureDescription <<< $featureData
     featureList+="- [$featureName](./src/$featureFolder/README.md): $featureDescription"
 done
 

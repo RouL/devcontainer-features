@@ -7,7 +7,7 @@ Installs Go via mise-en-place version manager.
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/mise-golang:1": {}
+    "ghcr.io/roul/devcontainer-features/mise-golang:1": {}
 }
 ```
 

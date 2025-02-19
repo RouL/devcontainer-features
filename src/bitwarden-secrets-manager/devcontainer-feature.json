@@ -1,6 +1,6 @@
 {
   "id": "bitwarden-secrets-manager",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "name": "Bitwarden Secrets Manager CLI (bws)",
   "description": "Installs the bitwarden secrets manager CLI (bws) and optionally configures it to use a self-hosted server.",
   "options": {

@@ -26,7 +26,7 @@ This example uses the **kamal** feature:
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/RouL/devcontainer-features/kamal:1": {}
+        "ghcr.io/roul/devcontainer-features/kamal:1": {}
     }
 }
 ```

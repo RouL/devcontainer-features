@@ -11,6 +11,8 @@ REPO_OWNER="${REPO_OWNER:-RouL}"
 REPO_NAME="${REPO_NAME:-devcontainer-features}"
 SRC_FOLDER="${SRC_FOLDER:-src}"
 
+NAMESPACE="${REPO_OWNER,,}/${REPO_NAME,,}"
+
 cd $BASE_PATH
 
-devcontainer features generate-docs --project-folder $SRC_FOLDER --namespace $REPO_OWNER/$REPO_NAME --github-owner $REPO_OWNER --github-repo $REPO_NAME
+devcontainer features generate-docs --project-folder $SRC_FOLDER --namespace $NAMESPACE --github-owner $REPO_OWNER --github-repo $REPO_NAME

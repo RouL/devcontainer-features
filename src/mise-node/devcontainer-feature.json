@@ -1,10 +1,10 @@
 {
   "id": "mise-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "Node.js (mise)",
   "description": "Installs Node.js via mise-en-place version manager.",
   "dependsOn": {
-    "ghcr.io/RouL/devcontainer-features/mise:latest": {}
+    "ghcr.io/roul/devcontainer-features/mise:latest": {}
   },
   "options": {
     "version": {

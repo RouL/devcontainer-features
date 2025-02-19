@@ -7,7 +7,7 @@ Installs Ruby via mise-en-place version manager.
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/mise-ruby:1": {}
+    "ghcr.io/roul/devcontainer-features/mise-ruby:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Installs Kamal Deploy directly via rubygems.
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/kamal:1": {}
+    "ghcr.io/roul/devcontainer-features/kamal:1": {}
 }
 ```
 

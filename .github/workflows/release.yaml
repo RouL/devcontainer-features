@@ -19,6 +19,7 @@ jobs:
       - name: "Publish features"
         uses: devcontainers/action@v1
         with:
+          features-namespace: roul/devcontainer-features
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"

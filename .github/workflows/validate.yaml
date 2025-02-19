@@ -12,5 +12,6 @@ jobs:
       - name: "Validate feature definitions"
         uses: devcontainers/action@v1
         with:
+          features-namespace: roul/devcontainer-features
           validate-only: "true"
           base-path-to-features: "./src"

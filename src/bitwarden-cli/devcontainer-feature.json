@@ -1,6 +1,6 @@
 {
   "id": "bitwarden-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Bitwarden CLI (bw)",
   "description": "Installs the bitwarden CLI (bw) and optionally configures it to use a self-hosted server.",
   "options": {

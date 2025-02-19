@@ -7,7 +7,7 @@ Installs mise-en-place version manager.
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/mise:1": {}
+    "ghcr.io/roul/devcontainer-features/mise:1": {}
 }
 ```
 

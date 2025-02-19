@@ -7,7 +7,7 @@ Installs the HashiCorp Vault binary.
 
 ```json
 "features": {
-    "ghcr.io/RouL/devcontainer-features/vault:1": {}
+    "ghcr.io/roul/devcontainer-features/vault:1": {}
 }
 ```
 

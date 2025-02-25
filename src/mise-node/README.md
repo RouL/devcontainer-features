@@ -1,5 +1,5 @@
 
-# Node.js (mise) (mise-node)
+# Node.js (via mise) (mise-node)
 
 Installs Node.js via mise-en-place version manager.
 

@@ -1,5 +1,5 @@
 
-# mise-en-place version manager (mise)
+# Mise - mise-en-place version manager (mise)
 
 Installs mise-en-place version manager.
 

@@ -1,5 +1,5 @@
 
-# Rust (mise) (mise-rust)
+# Rust (via mise) (mise-rust)
 
 Installs Rust via mise-en-place version manager.
 

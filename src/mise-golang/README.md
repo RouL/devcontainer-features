@@ -1,5 +1,5 @@
 
-# Go (mise) (mise-golang)
+# Go (via mise) (mise-golang)
 
 Installs Go via mise-en-place version manager.
 

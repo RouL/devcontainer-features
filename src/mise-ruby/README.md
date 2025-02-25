@@ -1,5 +1,5 @@
 
-# Ruby (mise) (mise-ruby)
+# Ruby (via mise) (mise-ruby)
 
 Installs Ruby via mise-en-place version manager.
 

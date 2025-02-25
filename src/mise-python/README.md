@@ -1,5 +1,5 @@
 
-# Python (mise) (mise-python)
+# Python (via mise) (mise-python)
 
 Installs Python via mise-en-place version manager.
 

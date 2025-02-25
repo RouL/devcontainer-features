@@ -1,7 +1,7 @@
 {
   "id": "mise-golang",
-  "version": "1.0.3",
-  "name": "Go (mise)",
+  "version": "1.0.4",
+  "name": "Go (via mise)",
   "description": "Installs Go via mise-en-place version manager.",
   "dependsOn": {
     "ghcr.io/roul/devcontainer-features/mise:latest": {}

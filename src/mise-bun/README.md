@@ -1,5 +1,5 @@
 
-# Bun (mise) (mise-bun)
+# Bun (via mise) (mise-bun)
 
 Installs Bun via mise-en-place version manager.
 

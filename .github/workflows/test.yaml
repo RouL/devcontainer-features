@@ -19,6 +19,7 @@ jobs:
           - mise
           - mise-bun
           - mise-golang
+          - mise-java
           - mise-node
           - mise-python
           - mise-ruby
@@ -70,6 +71,7 @@ jobs:
           - mise
           - mise-bun
           - mise-golang
+          - mise-java
           - mise-node
           - mise-python
           - mise-ruby

@@ -10,6 +10,7 @@ This repository contains the following features:
 - [Mise - mise-en-place version manager](./src/mise/README.md): Installs mise-en-place version manager.
 - [Bun (via mise)](./src/mise-bun/README.md): Installs Bun via mise-en-place version manager.
 - [Go (via mise)](./src/mise-golang/README.md): Installs Go via mise-en-place version manager.
+- [Java (via mise)](./src/mise-java/README.md): Installs Java via mise-en-place version manager.
 - [Node.js (via mise)](./src/mise-node/README.md): Installs Node.js via mise-en-place version manager.
 - [Python (via mise)](./src/mise-python/README.md): Installs Python via mise-en-place version manager.
 - [Ruby (via mise)](./src/mise-ruby/README.md): Installs Ruby via mise-en-place version manager.

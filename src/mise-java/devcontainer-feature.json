@@ -1,0 +1,21 @@
+{
+  "id": "mise-java",
+  "version": "1.0.0",
+  "name": "Java (via mise)",
+  "description": "Installs Java via mise-en-place version manager.",
+  "dependsOn": {
+    "ghcr.io/roul/devcontainer-features/mise:latest": {}
+  },
+  "options": {
+    "version": {
+      "description": "Version to be installed as default.",
+      "type": "string",
+      "default": "latest"
+    },
+    "extra_versions": {
+      "description": "Additional versions to be installed. (space separated)",
+      "type": "string",
+      "default": ""
+    }
+  }
+}

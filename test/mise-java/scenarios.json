@@ -1,0 +1,19 @@
+{
+  "openjdk9": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-java": {
+        "version": "9"
+      }
+    }
+  },
+  "zulu8_temurin20_corretto19": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mise-java": {
+        "version": "zulu-8",
+        "extra_versions": "temurin-20 corretto-19"
+      }
+    }
+  }
+}

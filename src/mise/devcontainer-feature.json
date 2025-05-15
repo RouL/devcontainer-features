@@ -1,6 +1,6 @@
 {
   "id": "mise",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "Mise - mise-en-place version manager",
   "description": "Installs mise-en-place version manager."
 }

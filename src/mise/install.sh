@@ -38,7 +38,6 @@ elif [ -n "\$BASH_VERSION" ]; then
 fi
 EOF
 }
-    chmod a+x /etc/profile.d/mise.sh
     cat >> $_REMOTE_USER_HOME/.bashrc << EOF
 eval "\$(mise activate bash)"
 EOF

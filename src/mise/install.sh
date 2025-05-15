@@ -5,6 +5,8 @@ REQUIRED_PACKAGES="curl sudo ca-certificates"
 RUBY_BUILD_DEPENDENCIES="autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev libffi-dev"
 PYTHON_BUILD_DEPENDENCIES="build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl git libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev"
 
+USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
+
 apt_get_update()
 {
     if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
@@ -36,6 +38,12 @@ elif [ -n "\$BASH_VERSION" ]; then
 fi
 EOF
 }
+    cat >> /home/$USERNAME/.bashrc << EOF
+eval "\$(mise activate bash)"
+EOF
+    cat >> /home/$USERNAME/.zshrc << EOF
+eval "\$(mise activate zsh)"
+EOF
 
 echo "(*) Installing mise-en-place..."
 

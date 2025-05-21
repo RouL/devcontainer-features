@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+
 sudo apt-get update -y > /dev/null
 sudo apt-get install -y curl jq ca-certificates > /dev/null
 

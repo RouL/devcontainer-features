@@ -28,7 +28,11 @@ gem_install() {
 
     case $RUBY_ENV in
         ruby)
-            su $USERNAME -c "gem install $PARAMS"
+            if [ "$GEM_HOME" != "" ] && ([ -d $GEM_HOME ] && [ -w $GEM_HOME ] || [ -d `dirname $GEM_HOME` ] && [ -w `dirname $GEM_HOME` ]); then
+                su $USERNAME -c "gem install $PARAMS"
+            else
+                su $USERNAME -c "gem install --user-install $PARAMS"
+            fi
             ;;
         mise)
             su $USERNAME -c "mise exec -- gem install $PARAMS"

@@ -47,3 +47,4 @@ tags
 [._]*.un~
 
 /output
+/temp

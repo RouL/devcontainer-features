@@ -1,6 +1,6 @@
 {
   "id": "kamal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "Kamal Deploy",
   "description": "Installs Kamal Deploy directly via rubygems.",
   "installsAfter": [
